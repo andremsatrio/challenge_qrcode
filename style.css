@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+	--font-family: 'Outfit',sans-serif;
+	--font-size: 15px;
+	--border-radius: 10px;
+}
+body {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	background-color: var(--white);
+}
+.container {
+	background-color: white;
+}
+.container .box {
+    display: grid;
+    justify-content: center;
+	background-color: var(--light-gray);
+
+}
+
+.container .box .card {
+	background-color: var(--white);
+	color: var(--dark-blue);
+	text-align: center;
+	width: 320px;
+	border-radius: var(--border-radius);
+	margin: 80px;
+
+	box-shadow: 2px 4px 6px rgb(210, 210, 210);
+}
+.container .box .card .image {
+	padding: 14px;
+	align-items: center;
+}
+.container .box .card .image img {
+	border-radius: var(--border-radius);
+}
+.container .box .card .title {
+	padding: 0px 20px 20px 20px;
+	align-items: center;
+}
+.container .box .card .description {
+	color: var(--grayish-blue);
+	padding: 0 30px 36px 30px;
+	align-items: center;
+}
